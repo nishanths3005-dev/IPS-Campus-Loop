@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-container":"#4b4433","on-secondary-fixed":"#002115","inverse-primary":"#a1d1b8","on-error-container":"#93000a","surface-dim":"#dddad3","on-error":"#ffffff","error":"#ba1a1a","surface-container-low":"#f7f3ec","on-primary-fixed-variant":"#214f3c","tertiary-fixed":"#ede1c9","on-tertiary":"#ffffff","outline":"#717973","on-tertiary-fixed":"#201b0c","primary-fixed-dim":"#a1d1b8","surface-container":"#f1ede6","tertiary-fixed-dim":"#d1c5ae","on-secondary-container":"#49695a","on-primary-container":"#8dbda4","on-surface":"#1c1c18","outline-variant":"#c0c9c2","secondary-fixed":"#c7ebd8","primary":"#023625","inverse-on-surface":"#f4f0e9","error-container":"#ffdad6","surface":"#fdf9f2","secondary":"#456556","on-secondary-fixed-variant":"#2d4d3f","secondary-fixed-dim":"#abcfbc","surface-tint":"#3a6753","on-secondary":"#ffffff","surface-bright":"#fdf9f2","on-surface-variant":"#414944","on-background":"#1c1c18","secondary-container":"#c4e8d5","on-tertiary-container":"#bcb19b","tertiary":"#342e1e","on-primary":"#ffffff","primary-container":"#1f4d3a","inverse-surface":"#31302c","surface-container-high":"#ebe8e1","surface-container-lowest":"#ffffff","surface-container-highest":"#e6e2db","background":"#fdf9f2","primary-fixed":"#bceed3","on-primary-fixed":"#002114","surface-variant":"#e6e2db","on-tertiary-fixed-variant":"#4d4635"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-mobile":"1rem","space-lg":"1.5rem","space-xl":"2.5rem",margin:"2rem",gutter:"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-xs":"0.25rem","margin-mobile":"1rem"},fontFamily:{"display-lg-mobile":["Epilogue"],"headline-sm":["Epilogue"],"display-lg":["Epilogue"],"label-sm":["Inter"],"headline-lg":["Epilogue"],"label-md":["Inter"],"title-md":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"headline-md":["Epilogue"]},fontSize:{"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",fontWeight:"500"}],"title-md":["18px",{lineHeight:"24px",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_2px_8px_rgba(31,77,58,0.06)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="CampusLoop Leaf Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCxdGVUrZLCKyGDgr5UkF4AcGtRpBbWI4fP1MNKBoXrXM0dwEXrM2JC9_YKrz5OneXBeWDWvZVGz44vhr7TwveLxGYX6CYF2nDp_A03nonhzPAj5Hd9H7NIvjsFrg_F5BRbjJvgMCEHsYzN3uQPtL0Y9DQLY6n98ULE1vIevmvk9UUAYgf2bWVMUWDtjWW6Q79YWMM7cw2zcbRUr0Q6H1-SwTyveh12LgfnrMGEwkYFjTMft-N7SI-"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CampusLoop</span></a><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-label-md text-label-md rounded-lg px-3 py-2"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary font-label-md text-label-md rounded-lg px-3 py-2" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-3 py-2 rounded-lg transition-colors" data-path="browse-items" href="#">Browse Items</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-3 py-2 rounded-lg transition-colors" data-path="impact" href="#">Impact</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-3 py-2 rounded-lg transition-colors" data-path="safety" href="#">Safety</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-3 py-2 rounded-lg transition-colors" data-path="dashboard" href="#">Dashboard</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container rounded-lg px-3 py-2 gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-md text-body-md text-on-surface-variant">Search campus listings...</span><kbd class="font-label-sm text-label-sm bg-surface-container-lowest px-2 py-0.5 rounded shadow-[0_1px_2px_rgba(0,0,0,0.05)]">⌘K</kbd></div><a class="hidden sm:inline-flex items-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md px-4 py-2.5 rounded-lg transition-colors" data-path="create-listing" href="#"><span class="material-symbols-outlined text-[18px]">add_circle</span><span>List Item</span></a><button aria-label="Notifications" class="relative p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-error rounded-full ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative group flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAHmoBFRolSm32yVv9vC7EyRgBvUyxWTaEWO3-wt8VzJotin60TGAX_pqWcGsUflA2dRNvLeUtGIodkAD9udVmBAM-73cIGEkNIM3QQjqtBnaK_VvlIIl3mZBir0nx-uIxngv6sbT8F-8NXzq_5FoG3isr1KeoZMy5Sv91DCimbN2EFfWwgI0JQgR_DkP7lNzUlQvsuLNOWU3NRT5C8dgpUfViBTQfFZu65VZyR7wRE5SOPb7TLxuA"/><div class="hidden xl:flex flex-col text-left"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md text-on-surface">Aarav Mehta</span><span class="material-symbols-outlined text-[14px] text-primary">verified</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">CSE '26 • Verified</span></div><span class="material-symbols-outlined text-[18px] text-on-surface-variant hidden xl:block">expand_more</span></div></div><button aria-label="Toggle Mobile Menu" class="lg:hidden p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg" type="button"><span class="material-symbols-outlined">menu</span></button></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)] pb-24 md:pb-0"><div class="flex flex-col w-full">
+<!-- Viewport Switcher Toolbar (Interactive prototype preview) -->
+<div class="w-full bg-surface-container-high py-2 px-margin-mobile md:px-margin">
+<div class="max-w-[1280px] mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">devices</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Simulate Viewport:</span>
+</div>
+<div class="flex items-center bg-surface-container rounded-lg p-0.5" id="viewport-switcher">
+<button class="flex items-center gap-1.5 px-3 py-1 rounded-md text-on-primary bg-primary-container font-label-sm text-label-sm transition-all shadow-sm" id="btn-vp-desktop" onclick="setDeviceView('desktop')" type="button">
+<span class="material-symbols-outlined text-[14px]">desktop_windows</span>
+<span>Desktop (1440px)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" id="btn-vp-tablet" onclick="setDeviceView('tablet')" type="button">
+<span class="material-symbols-outlined text-[14px]">tablet_mac</span>
+<span>Tablet (768px)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" id="btn-vp-mobile" onclick="setDeviceView('mobile')" type="button">
+<span class="material-symbols-outlined text-[14px]">smartphone</span>
+<span>Mobile (375px)</span>
+</button>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span>Campus Node: North Quad Hub (Active)</span>
+</div>
+</div>
+</div>
+<!-- Adaptive Canvas Container -->
+<div class="w-full max-w-[1280px] mx-auto transition-all duration-300 px-margin-mobile md:px-margin py-space-lg md:py-space-xl flex flex-col gap-space-xl" id="canvas-container">
+<!-- 1. Split Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center pt-space-xs">
+<!-- Left Column: Copy & Actions -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+<!-- Eyebrow Pill -->
+<div class="inline-flex items-center gap-space-xs bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm px-3.5 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">school</span>
+<span>Campus-only • Verified students</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary ml-1"></span>
+<span class="text-primary font-semibold">.EDU Required</span>
+</div>
+<!-- Hero Headline -->
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight text-balance">
+          Give Items a Second Life.
+        </h1>
+<!-- Subhead -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl text-balance">
+          Donate and exchange textbooks, electronics, lab gear, and hostel essentials with classmates across campus. Zero hassle, zero landfill, pure student mutual aid.
+        </p>
+<!-- CTA Action Group -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all active:scale-[0.98]" data-path="browse-items" href="#">
+<span class="material-symbols-outlined text-[20px]">search</span>
+<span>Browse Items</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-secondary-container hover:bg-secondary-fixed text-primary font-label-md text-label-md px-6 py-3 rounded-lg shadow-sm transition-all active:scale-[0.98]" data-path="create-listing" href="#">
+<span class="material-symbols-outlined text-[20px]">volunteer_activism</span>
+<span>Donate an Item</span>
+</a>
+</div>
+<!-- Verified Trust Indicator -->
+<div class="flex items-center gap-space-sm pt-space-sm text-on-surface-variant">
+<div class="flex -space-x-2">
+<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-primary text-[10px] font-bold shadow-sm">AM</div>
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface text-[10px] font-bold shadow-sm">PS</div>
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px] font-bold shadow-sm">+9k</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+            Joined by <span class="font-semibold text-on-surface">1,890+ verified students</span> from Engineering, Arts &amp; Sciences
+          </p>
+</div>
+</div>
+<!-- Right Column: Visual 3-Card Collage -->
+<div class="lg:col-span-5 relative w-full h-[380px] md:h-[440px] flex items-center justify-center select-none">
+<!-- Ambient decorative loop glow -->
+<div class="absolute inset-0 bg-gradient-to-br from-secondary-container/40 via-surface-container to-transparent rounded-3xl -z-10 blur-xl"></div>
+<!-- Card 1 (Back Left: Lab Coat) -->
+<div class="absolute left-2 md:left-4 top-8 w-56 md:w-64 bg-surface-container-lowest p-3 rounded-xl shadow-md rotate-[-6deg] hover:rotate-0 transition-transform duration-300">
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Official university cotton white laboratory protective coat folded neatly on an oak wooden desk next to protective safety goggles, soft academic sunlight, sharp crisp product photo, warm tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMqBAkMT-VFmMkpRxMxW6vSmdjy3lgI4vY9YH3Or3q-O1MDWB0fazhidC4ODzzhaUP2EHja38IPWTU6qRhNiXUew1WOYcxdo_fzD1FI5Qr8TrHhHekzVZ65LETL4mJS3eHhFcZWKsR7EoS3pp-uX3UtW9BMW16SXJ3bTdlMVVjq9BVzz6ycjqTENr6e5_Qy2loq-zPn4RgYQLVM0cANuuyillsyumEAxlo6nZPwqW3c_HPvUKOvlWp"/>
+<span class="absolute top-2 left-2 bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm px-2 py-0.5 rounded-full">Size M</span>
+</div>
+<div class="mt-2.5">
+<div class="font-label-md text-label-md text-primary font-semibold truncate">Lab Coat — Protective Gear</div>
+<div class="flex justify-between items-center mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chemistry Annex</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-primary font-medium px-2 py-0.5 rounded">Donation</span>
+</div>
+</div>
+</div>
+<!-- Card 2 (Back Right: TI-84 Plus) -->
+<div class="absolute right-2 md:right-4 bottom-6 w-56 md:w-64 bg-surface-container-lowest p-3 rounded-xl shadow-md rotate-[5deg] hover:rotate-0 transition-transform duration-300">
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Graphing Texas Instruments calculator TI 84 plus silver edition resting on clean engineering grid paper with mechanical pencil, natural desk lighting, university studio aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjSpwUnAvqu8npx3xaUqCIEjkujVgvJhJxka7CxFhW_jR_xkZwWRjpOLt6a1_70RpowXto2CqzIkwT0OJIQ17ZuW67sm77XEBUYudgmGk8CaFYXPg51TpYqq6Qa4bKMB8Wyi_24CZdra7Ci4skGRtM2we1bd2txs6RvY1lZh2vB89_gYrskbLnOzpFPq6lWtBIfmt1N7OX2_BzawlH8maK3N5flMsPctYJUVLoziquWjE3ip0jrPRD"/>
+<span class="absolute top-2 right-2 bg-surface-container text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">Good</span>
+</div>
+<div class="mt-2.5">
+<div class="font-label-md text-label-md text-primary font-semibold truncate">TI-84 Plus Graphing Calc</div>
+<div class="flex justify-between items-center mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">South Dormitory</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-tertiary font-medium px-2 py-0.5 rounded">Exchange</span>
+</div>
+</div>
+</div>
+<!-- Card 3 (Center Foreground: Calculus Textbook) -->
+<div class="relative z-10 w-64 md:w-72 bg-surface-container-lowest p-3.5 rounded-xl shadow-xl hover:scale-105 transition-all duration-300">
+<!-- Floating 'Listed 2h ago' Pill -->
+<div class="absolute -top-3.5 -right-2 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 rounded-full shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>Listed 2h ago</span>
+</div>
+<div class="relative w-full h-40 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Thick hardcover Calculus Early Transcendentals textbook 8th edition standing upright in an ivy league library cubicle, golden afternoon study light, dust jacket intact, sharp focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbofHlXyXZPcUjW54cGdwXqpt6O7kUVGJKceNj7n3XtvrnRRYFS9rLObBruuCA68SUyLEvGN_FQaZmO6PvIYxUbwhIj7oP5M2jH2kmCgPI227Wr7Kc3WCJ5vujFSY-wvFEdkWDif9HV8A_kcvkVa4hzZDNJMCwFj7wIB9uDrfgRoLlyZxyRX3F_tXK0rlhTujM5gLIqI30x-xS_oPEJf38ikgU5aNmPKhnkH1rw-zZIICdFmpJsYDy"/>
+<span class="absolute bottom-2 left-2 bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold">Free • Mutual Aid</span>
+</div>
+<div class="mt-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">MATH 201 Required</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Like New</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface truncate mt-0.5">Calculus: Early Transcendentals</h4>
+<div class="flex items-center gap-2 mt-2 pt-2 bg-surface-container-low px-2 py-1.5 rounded-lg">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary text-[10px] flex items-center justify-center font-bold">R</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Rohan V. • Math '25</span>
+<span class="material-symbols-outlined text-[14px] text-primary ml-auto">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Centered Search Bar & Category Quick-Chips -->
+<section class="w-full flex flex-col items-center gap-space-md bg-surface-container-lowest p-space-md md:p-space-lg rounded-2xl shadow-sm">
+<!-- Search Input Container -->
+<div class="w-full max-w-3xl relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-on-surface-variant text-[22px]">search</span>
+<input class="w-full pl-12 pr-28 py-3.5 bg-surface-container rounded-xl text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant focus:bg-surface-container-lowest focus:shadow-md transition-all outline-none" placeholder="Search textbooks, calculators, dorm chairs, lab equipment..." type="text"/>
+<button class="absolute right-2.5 bg-primary-container hover:bg-primary text-on-primary font-label-sm text-label-sm px-4 py-2 rounded-lg transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span>Search</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Quick Category Filter Chips -->
+<div class="w-full max-w-4xl flex items-center justify-start md:justify-center gap-2 overflow-x-auto pb-1 text-nowrap" id="category-filter-chips">
+<button class="category-chip bg-primary-container text-on-primary font-label-md text-label-md px-3.5 py-1.5 rounded-full shadow-sm transition-colors" onclick="filterCategory(this, 'All')" type="button">
+          All
+        </button>
+<button class="category-chip bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-3.5 py-1.5 rounded-full transition-colors" onclick="filterCategory(this, 'Books')" type="button">
+          Books
+        </button>
+<button class="category-chip bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-3.5 py-1.5 rounded-full transition-colors" onclick="filterCategory(this, 'Electronics')" type="button">
+          Electronics
+        </button>
+<button class="category-chip bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-3.5 py-1.5 rounded-full transition-colors" onclick="filterCategory(this, 'Lab Gear')" type="button">
+          Lab Gear
+        </button>
+<button class="category-chip bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-3.5 py-1.5 rounded-full transition-colors" onclick="filterCategory(this, 'Stationery')" type="button">
+          Stationery
+        </button>
+<button class="category-chip bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-3.5 py-1.5 rounded-full transition-colors" onclick="filterCategory(this, 'Sports')" type="button">
+          Sports
+        </button>
+<button class="category-chip bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-3.5 py-1.5 rounded-full transition-colors" onclick="filterCategory(this, 'Hostel')" type="button">
+          Hostel
+        </button>
+<button class="category-chip bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-3.5 py-1.5 rounded-full transition-colors" onclick="filterCategory(this, 'Apparel')" type="button">
+          Apparel
+        </button>
+<button class="category-chip bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-3.5 py-1.5 rounded-full transition-colors" onclick="filterCategory(this, 'Other')" type="button">
+          Other
+        </button>
+</div>
+</section>
+<!-- 3. 8-Card Circular/Pill Category Grid -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Campus Catalog</span>
+<h2 class="font-headline-md text-headline-md text-primary">Browse by Category</h2>
+</div>
+<a class="hidden sm:inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:underline" data-path="browse-items" href="#">
+<span>View all categories</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-space-sm">
+<!-- 1. Textbooks -->
+<a class="group flex flex-col items-center justify-center p-4 rounded-2xl bg-surface-container-lowest hover:bg-secondary-container transition-all shadow-sm text-center" data-path="browse-items" href="#">
+<div class="w-12 h-12 rounded-full bg-surface-container group-hover:bg-surface-container-lowest flex items-center justify-center text-primary transition-colors mb-2">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary">Textbooks</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">142 active</span>
+</a>
+<!-- 2. Electronics -->
+<a class="group flex flex-col items-center justify-center p-4 rounded-2xl bg-surface-container-lowest hover:bg-secondary-container transition-all shadow-sm text-center" data-path="browse-items" href="#">
+<div class="w-12 h-12 rounded-full bg-surface-container group-hover:bg-surface-container-lowest flex items-center justify-center text-primary transition-colors mb-2">
+<span class="material-symbols-outlined text-[24px]">devices</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary">Electronics</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">68 active</span>
+</a>
+<!-- 3. Lab Gear -->
+<a class="group flex flex-col items-center justify-center p-4 rounded-2xl bg-surface-container-lowest hover:bg-secondary-container transition-all shadow-sm text-center" data-path="browse-items" href="#">
+<div class="w-12 h-12 rounded-full bg-surface-container group-hover:bg-surface-container-lowest flex items-center justify-center text-primary transition-colors mb-2">
+<span class="material-symbols-outlined text-[24px]">science</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary">Lab Gear</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">35 active</span>
+</a>
+<!-- 4. Stationery -->
+<a class="group flex flex-col items-center justify-center p-4 rounded-2xl bg-surface-container-lowest hover:bg-secondary-container transition-all shadow-sm text-center" data-path="browse-items" href="#">
+<div class="w-12 h-12 rounded-full bg-surface-container group-hover:bg-surface-container-lowest flex items-center justify-center text-primary transition-colors mb-2">
+<span class="material-symbols-outlined text-[24px]">edit_note</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary">Stationery</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">49 active</span>
+</a>
+<!-- 5. Sports -->
+<a class="group flex flex-col items-center justify-center p-4 rounded-2xl bg-surface-container-lowest hover:bg-secondary-container transition-all shadow-sm text-center" data-path="browse-items" href="#">
+<div class="w-12 h-12 rounded-full bg-surface-container group-hover:bg-surface-container-lowest flex items-center justify-center text-primary transition-colors mb-2">
+<span class="material-symbols-outlined text-[24px]">sports_soccer</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary">Sports</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">22 active</span>
+</a>
+<!-- 6. Hostel/Dorm -->
+<a class="group flex flex-col items-center justify-center p-4 rounded-2xl bg-surface-container-lowest hover:bg-secondary-container transition-all shadow-sm text-center" data-path="browse-items" href="#">
+<div class="w-12 h-12 rounded-full bg-surface-container group-hover:bg-surface-container-lowest flex items-center justify-center text-primary transition-colors mb-2">
+<span class="material-symbols-outlined text-[24px]">bed</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary">Hostel</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">54 active</span>
+</a>
+<!-- 7. Apparel -->
+<a class="group flex flex-col items-center justify-center p-4 rounded-2xl bg-surface-container-lowest hover:bg-secondary-container transition-all shadow-sm text-center" data-path="browse-items" href="#">
+<div class="w-12 h-12 rounded-full bg-surface-container group-hover:bg-surface-container-lowest flex items-center justify-center text-primary transition-colors mb-2">
+<span class="material-symbols-outlined text-[24px]">apparel</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary">Apparel</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">31 active</span>
+</a>
+<!-- 8. Other Essentials -->
+<a class="group flex flex-col items-center justify-center p-4 rounded-2xl bg-surface-container-lowest hover:bg-secondary-container transition-all shadow-sm text-center" data-path="browse-items" href="#">
+<div class="w-12 h-12 rounded-full bg-surface-container group-hover:bg-surface-container-lowest flex items-center justify-center text-primary transition-colors mb-2">
+<span class="material-symbols-outlined text-[24px]">category</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary">Other</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">19 active</span>
+</a>
+</div>
+</section>
+<!-- 4. 'Fresh on Campus' 4-Column Recently-Listed Grid -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Live Feed</span>
+<h2 class="font-headline-md text-headline-md text-primary">Fresh on Campus</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Available for pickup at campus nodes today.</p>
+</div>
+<!-- Interactive State Switcher for Demo / Evaluation -->
+<div class="flex items-center gap-space-xs bg-surface-container rounded-lg p-1 self-start sm:self-auto">
+<button class="px-3 py-1 rounded-md text-on-primary bg-primary font-label-sm text-label-sm transition-all shadow-sm" id="btn-state-filled" onclick="toggleListingState('filled')" type="button">
+            Active Feed (4 items)
+          </button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" id="btn-state-empty" onclick="toggleListingState('empty')" type="button">
+            Empty State Preview
+          </button>
+</div>
+</div>
+<!-- Filled State Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter" id="grid-fresh-listings">
+<!-- Card 1: Calculus -->
+<div class="group bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container mb-3">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="University math textbook Calculus Early Transcendentals on a wooden library study desk, clean condition, natural daylight from large campus window, professional academic photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMUC9meLxywuV6dOLGYS3oxNl3joZU-SliGzb9sCaWIbjrasSXND0E5cCT9sFH1cnJ1tm62HYMRALCwC0CAesA_jV-Wj-83j9-he0BCWlCIH2g2yyj5nnF6qPkBEJzzqo_XNgUtOfD8MfV19GMuU8ih7ZbSv-uJLuaVbhQB2FbIXcvIZQuqHi0Q29OYon6z8yIvgAkfhhmi5AdCnZSfnSZe83rmIn10LupdGEhbV23cQfy_Lpb97_t"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold">Donation</span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">Like New</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Calculus: Early Transcendentals 8th Edition
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mt-1">
+              Used for single-variable calculus, no highlighters or markings. Clean pages with formula fold-out.
+            </p>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low px-3 py-2 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-primary font-bold text-xs shrink-0">PS</div>
+<div class="truncate">
+<div class="font-label-md text-label-md text-on-surface font-semibold truncate">Priya S.</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate">CSE '25</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 pl-1">2h ago</span>
+</div>
+</div>
+<!-- Card 2: Casio Calculator -->
+<div class="group bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container mb-3">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Casio FX-991EX Classwiz scientific calculator lying flat on a wooden engineering workspace next to drafted blueprints, crisp modern product photograph, sharp details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWP9DhdpCCVaAoKuu1TKkWbvZdje4qiDGkNIN7y-h-5cgevihARJwqXJkyW384a6e35K1OHjecZ-UOSYrC2cP16bUaqP97vLimNkc6faPSrZdRxDJEv8VNy4tfASlCQ464RePACL-jClrVDG7xXWLf4z7b-nkHSAIVCnTBHXkChWZKk22tw3V0jcTB17XvEDmtj9Fgu5CxbhbbgiYWoIFmkzkeS1BrLveCaczQBeu8v31Jsr5UjDrj"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold">Exchange</span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">Good</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Casio FX-991EX Calculator
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mt-1">
+              Solar powered with original slide-on cover. Looking to exchange for standard drafting compass set.
+            </p>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low px-3 py-2 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-xs shrink-0">AM</div>
+<div class="truncate">
+<div class="font-label-md text-label-md text-on-surface font-semibold truncate">Aarav M.</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate">EE '26</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 pl-1">3h ago</span>
+</div>
+</div>
+<!-- Card 3: Lab Coat Size M -->
+<div class="group bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container mb-3">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Pristine white cotton chemistry lab coat hung on an antique wooden campus locker hanger, clean studio style, soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVBQBeaGj8WNMteyTeHpktUcRnjhzo2JIl6CMxkMg447JcJVzgPs6udaKu75U7T9tbHMSWf5XtjnxK2dsw41YzolMHEy_mjg4mOulZJ3hD_Iy0JAUKEOHeNZ2MUJumvobxKo4x21joJ2p2EhqTLpacaS8uepyedkhvr4Yyvd_RxlnSpGvK8VQy0wF-R48beu0Wi3G98klquPxdLEQ6h23f7-vh0du1k4pqXxkdhUN_8aM5rCcomfyb"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold">Donation</span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">Like New</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Lab Coat — Size M
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mt-1">
+              Standard required heavy-drill cotton coat for General Chemistry. Washed and sanitized yesterday.
+            </p>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low px-3 py-2 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs shrink-0">DK</div>
+<div class="truncate">
+<div class="font-label-md text-label-md text-on-surface font-semibold truncate">Devika K.</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate">Bio '24</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 pl-1">5h ago</span>
+</div>
+</div>
+<!-- Card 4: Mini Desk Lamp -->
+<div class="group bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container mb-3">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Minimalist matte green LED gooseneck desk lamp illuminating notebook pages in a cozy dormitory room, warm ambient lighting, peaceful study environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeFJmEEEvndtQT-RaKkRbvCOxubPrrPJzV1tXYK5ZCb-CPRHr392ZIZYxvh9RdPW04FoK6Sh9thNJj1LYNAp3uMFyTixBIlZHvZaKaa0nvRgjhALIkt3x3lsCG14muGge2C-4Em4iR4iRoOk5hti8tkKNw0MOKYLXpg-De11GRPFfAG5WNct5ZXCNNtpkiHe7wtDq8wNuww0I2zwD5MQxLU3xcZ3pHcbNWGVCFsudRmwmS2kY3RSFA"/>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold">Donation</span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">Good</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Mini Desk Lamp — Dimmable LED
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mt-1">
+              Compact USB-C rechargeable lamp with 3 color temperatures. Perfect for late-night dorm studies.
+            </p>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low px-3 py-2 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-xs shrink-0">TL</div>
+<div class="truncate">
+<div class="font-label-md text-label-md text-on-surface font-semibold truncate">Tanmay L.</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant truncate">Arch '27</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 pl-1">7h ago</span>
+</div>
+</div>
+</div>
+<!-- Empty State Container (Hidden by default, toggleable via UI) -->
+<div class="hidden w-full bg-surface-container-lowest rounded-2xl p-space-xl text-center flex-col items-center justify-center shadow-sm" id="grid-empty-state">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant mb-space-sm">
+<span class="material-symbols-outlined text-[32px] text-primary">inventory_2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">No listings yet — be the first to share something.</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-1 mb-space-md">
+          Dorm move-outs, semester transitions, or leftover lab supplies? Free up shelf space and help a fellow classmate.
+        </p>
+<a class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-lg shadow-sm hover:bg-primary transition-colors" data-path="create-listing" href="#">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Create First Listing</span>
+</a>
+</div>
+</section>
+<!-- 5. 3-Step 'How It Works' Section -->
+<section class="bg-surface-container-lowest p-space-md md:p-space-xl rounded-2xl shadow-sm">
+<div class="text-center max-w-xl mx-auto mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Campus Protocol</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">How CampusLoop Works</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Simple, authenticated, and safe reuse designed specifically for collegiate life.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter relative">
+<!-- Step 1 -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col items-start gap-space-sm">
+<div class="flex items-center justify-between w-full">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold text-headline-sm">
+              1
+            </div>
+<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Sign up with college email</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Authenticate using your official university <code class="bg-surface-container px-1 py-0.5 rounded text-primary font-semibold text-label-sm">@college.edu</code> handle to verify active enrollment status.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col items-start gap-space-sm">
+<div class="flex items-center justify-between w-full">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold text-headline-sm">
+              2
+            </div>
+<span class="material-symbols-outlined text-primary text-[24px]">swap_horizontal_circle</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">List or browse useful items</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Post an item you finished using for zero cost or direct trade. Snap 2 photos, tag course requisites, and publish in under 45 seconds.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col items-start gap-space-sm">
+<div class="flex items-center justify-between w-full">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold text-headline-sm">
+              3
+            </div>
+<span class="material-symbols-outlined text-primary text-[24px]">location_on</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Meet safely &amp; handover</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Coordinate seamless handovers at verified Campus Safe-Swap Zones like student library lobbies, campus cafes, or quad benches.
+          </p>
+</div>
+</div>
+</section>
+<!-- 6. Full-Width Forest Green Impact Strip -->
+<section class="w-full bg-primary rounded-2xl p-space-lg md:p-space-xl text-on-primary shadow-lg relative overflow-hidden">
+<!-- Background subtle decorative pattern -->
+<div class="absolute -right-12 -bottom-12 w-64 h-64 rounded-full bg-primary-container/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed font-semibold">Our Collective Footprint</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary mt-1">Campus Circular Impact</h2>
+</div>
+<div class="inline-flex items-center gap-1.5 bg-primary-container text-secondary-fixed px-3 py-1.5 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">cycle</span>
+<span>Real-time semester cycle</span>
+</div>
+</div>
+<!-- Four Big White Numbers Grid -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter pt-space-xs">
+<!-- Stat 1 -->
+<div class="flex flex-col gap-1">
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg font-bold text-on-primary tracking-tight">1,240</span>
+<span class="font-title-md text-title-md text-primary-fixed-dim">Items reused</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Prevented from dorm dumpsters</span>
+</div>
+<!-- Stat 2 -->
+<div class="flex flex-col gap-1">
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg font-bold text-on-primary tracking-tight">312</span>
+<span class="font-title-md text-title-md text-primary-fixed-dim">Active listings</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Ready for pickup this week</span>
+</div>
+<!-- Stat 3 -->
+<div class="flex flex-col gap-1">
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg font-bold text-on-primary tracking-tight">860 kg</span>
+<span class="font-title-md text-title-md text-primary-fixed-dim">Waste diverted (est.)</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Paper, plastic &amp; electronic e-waste</span>
+</div>
+<!-- Stat 4 -->
+<div class="flex flex-col gap-1">
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg font-bold text-on-primary tracking-tight">1,890</span>
+<span class="font-title-md text-title-md text-primary-fixed-dim">Students sharing</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Across 34 academic departments</span>
+</div>
+</div>
+<div class="pt-space-xs text-on-primary-container font-label-sm text-label-sm flex items-center gap-1.5 opacity-90">
+<span class="material-symbols-outlined text-[14px]">info</span>
+<span>*Environmental figures are estimates based on campus survey metrics and average product lifecycle benchmarks.</span>
+</div>
+</div>
+</section>
+<!-- 7. Real Student Testimonial Cards -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Peer Verification</span>
+<h2 class="font-headline-md text-headline-md text-primary">What Classmates Are Saying</h2>
+</div>
+<div class="hidden sm:flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>100% verified student submissions</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Testimonial 1: Aarav Mehta -->
+<div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-2xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface italic">
+              “I listed my organic chemistry molecular modeling kit on Tuesday evening, and by 10 AM Wednesday morning I passed it to a freshman in the main library atrium. No shipping boxes, no markup, just fellow students helping each other.”
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-2 bg-surface-container-low p-space-sm rounded-xl">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-sm shrink-0">
+              AM
+            </div>
+<div class="min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md text-on-surface">Aarav Mehta</span>
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Computer Science &amp; Engineering • Class of '26</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 2: Priya Sharma -->
+<div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-2xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface italic">
+              “Moving out of North Quad used to mean throwing away perfectly good lamps, desk caddies, and books. With CampusLoop, every single item found a home with someone in our neighboring dorm in under 48 hours.”
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-2 bg-surface-container-low p-space-sm rounded-xl">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center font-bold text-sm shrink-0">
+              PS
+            </div>
+<div class="min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md text-on-surface">Priya Sharma</span>
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bioengineering • Class of '25</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Warm Beige CTA Banner -->
+<section class="w-full bg-surface-container rounded-2xl p-space-lg md:p-space-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md relative overflow-hidden">
+<!-- Decorative leafy pattern overlay -->
+<div class="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-secondary-container/30 to-transparent pointer-events-none"></div>
+<div class="max-w-xl z-10">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Make An Impact Today</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">
+          Have something you no longer need? Give it a second life.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Clear out desk clutter, support an incoming junior, and help build a zero-waste collegiate ecosystem.
+        </p>
+</div>
+<div class="z-10 flex flex-col sm:flex-row items-center gap-space-sm w-full md:w-auto shrink-0">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md px-7 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all active:scale-[0.98]" data-path="create-listing" href="#">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>List an Item</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-md text-label-md px-6 py-3.5 rounded-lg shadow-sm transition-all" data-path="browse-items" href="#">
+<span>Explore Catalog</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+<!-- Inline Interactive Script (State switcher & Viewport simulation) -->
+<script>
+  function toggleListingState(state) {
+    const filledGrid = document.getElementById('grid-fresh-listings');
+    const emptyState = document.getElementById('grid-empty-state');
+    const btnFilled = document.getElementById('btn-state-filled');
+    const btnEmpty = document.getElementById('btn-state-empty');
+
+    if (state === 'empty') {
+      filledGrid.classList.add('hidden');
+      emptyState.classList.remove('hidden');
+      emptyState.classList.add('flex');
+      
+      btnEmpty.className = "px-3 py-1 rounded-md text-on-primary bg-primary font-label-sm text-label-sm transition-all shadow-sm";
+      btnFilled.className = "px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all";
+    } else {
+      filledGrid.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+      emptyState.classList.remove('flex');
+
+      btnFilled.className = "px-3 py-1 rounded-md text-on-primary bg-primary font-label-sm text-label-sm transition-all shadow-sm";
+      btnEmpty.className = "px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all";
+    }
+  }
+
+  function filterCategory(btn, categoryName) {
+    const chips = document.querySelectorAll('#category-filter-chips .category-chip');
+    chips.forEach(chip => {
+      chip.className = "category-chip bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-3.5 py-1.5 rounded-full transition-colors";
+    });
+    btn.className = "category-chip bg-primary-container text-on-primary font-label-md text-label-md px-3.5 py-1.5 rounded-full shadow-sm transition-colors";
+  }
+
+  function setDeviceView(device) {
+    const container = document.getElementById('canvas-container');
+    const btnDesktop = document.getElementById('btn-vp-desktop');
+    const btnTablet = document.getElementById('btn-vp-tablet');
+    const btnMobile = document.getElementById('btn-vp-mobile');
+
+    [btnDesktop, btnTablet, btnMobile].forEach(btn => {
+      btn.className = "flex items-center gap-1.5 px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all";
+    });
+
+    if (device === 'mobile') {
+      container.style.maxWidth = '375px';
+      btnMobile.className = "flex items-center gap-1.5 px-3 py-1 rounded-md text-on-primary bg-primary-container font-label-sm text-label-sm transition-all shadow-sm";
+    } else if (device === 'tablet') {
+      container.style.maxWidth = '768px';
+      btnTablet.className = "flex items-center gap-1.5 px-3 py-1 rounded-md text-on-primary bg-primary-container font-label-sm text-label-sm transition-all shadow-sm";
+    } else {
+      container.style.maxWidth = '1280px';
+      btnDesktop.className = "flex items-center gap-1.5 px-3 py-1 rounded-md text-on-primary bg-primary-container font-label-sm text-label-sm transition-all shadow-sm";
+    }
+  }
+</script></main><aside class="fixed bottom-20 right-4 z-40 md:hidden"><a class="flex items-center gap-space-xs bg-primary-container text-on-primary px-4 py-3 rounded-full shadow-[0_6px_16px_rgba(31,77,58,0.2)] font-label-md text-label-md active:scale-95 transition-transform" data-path="create-listing" href="#"><span class="material-symbols-outlined text-[20px]">add</span><span>Post Item</span></a></aside><nav class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-2px_12px_rgba(31,77,58,0.06)] md:hidden"><div class="flex items-center justify-around h-16 px-2" data-active-classes="text-primary font-semibold"><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface py-1 px-2" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface py-1 px-2" data-path="browse-items" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm">Browse</span></a><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface py-1 px-2" data-path="donate" href="#"><span class="material-symbols-outlined text-[22px]">volunteer_activism</span><span class="font-label-sm text-label-sm">Donate</span></a><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface py-1 px-2" data-path="requests" href="#"><span class="material-symbols-outlined text-[22px]">swap_horiz</span><span class="font-label-sm text-label-sm">Requests</span></a><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface py-1 px-2" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav><footer class="w-full bg-surface-container-low mt-space-xl pt-space-xl pb-16"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div><div class="flex items-center gap-space-sm mb-space-md"><span class="font-headline-sm text-headline-sm text-primary">CampusLoop</span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md max-w-xs">One campus. Less waste. More sharing. A verified student community powering circular reuse and mutual aid.</p><div class="inline-flex items-center gap-space-xs bg-secondary-container text-on-secondary-container px-3 py-1.5 rounded-full font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">eco</span><span>Zero-Waste Collegiate Initiative</span></div></div><div><h4 class="font-title-md text-title-md text-on-surface mb-space-md">Platform</h4><ul class="space-y-space-sm"><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="browse-items" href="#">Textbooks &amp; Notes</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="browse-items" href="#">Dorm Furniture</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="donate" href="#">Free Donations Hub</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="requests" href="#">Student Wishlist Pool</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="impact" href="#">Carbon &amp; Metric Ledger</a></li></ul></div><div><h4 class="font-title-md text-title-md text-on-surface mb-space-md">Support &amp; Safety</h4><ul class="space-y-space-sm"><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety" href="#">Campus Safe-Swap Zones</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety" href="#">.EDU Verification Rules</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety" href="#">Student Honor Code</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="support" href="#">Campus Liaison Desk</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="guidelines" href="#">Exchange Guidelines</a></li></ul></div><div><h4 class="font-title-md text-title-md text-on-surface mb-space-md">Verification &amp; Trust</h4><div class="bg-surface-container rounded-xl p-space-md space-y-space-sm"><div class="flex items-center gap-space-xs text-primary font-label-md text-label-md"><span class="material-symbols-outlined text-[18px]">verified_user</span><span>Institutionally Protected</span></div><p class="font-body-md text-body-md text-on-surface-variant">Only authenticated university email accounts can transact, browse pickup nodes, or exchange goods.</p><span class="inline-block font-label-sm text-label-sm text-on-secondary-container bg-surface px-2.5 py-1 rounded">Status: Active Academic Year</span></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-md text-body-md text-on-surface-variant"><p>© 2025 CampusLoop Mutual Aid Network. Crafted for collegiate stewardship.</p><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Campus Terms</a><a class="hover:text-on-surface transition-colors" data-path="safety" href="#">Safety Guidelines</a></div></div></div></footer></body></html>

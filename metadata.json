@@ -1,0 +1,6 @@
+{
+  "name": "CampusLoop",
+  "description": "Campus-wide circular exchange and mutual aid network for university students to donate and swap textbooks, electronics, lab gear, and dorm essentials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
